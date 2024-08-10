@@ -1,0 +1,119 @@
+/* admin_vigilantes.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #4ce7ea;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: auto;
+  text-align: center; /* Centrar el contenido dentro del contenedor */
+}
+
+.img_admin_home {
+  border-radius: 10%;
+  width: 45%;
+  height: auto;
+}
+
+.div_minuta,
+.listado_usuarios,
+.ver_usuarios,
+.admin {
+  text-align: center;
+  margin: 10px;
+}
+
+.botones-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+td {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilo para los botones */
+.botones-container a {
+  text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+button {
+  background-color: #4caf50;
+  color: #000;
+  padding: 10px 15px;
+  border: none; /* Eliminar el borde */
+  border-radius: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 15px;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  font-weight: bold;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #6bcc97;
+}
+
+button::after {
+  right: -10px;
+  background: #9bdfca;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 58%;
+}
+
+button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}

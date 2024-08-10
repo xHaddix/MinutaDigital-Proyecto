@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Registro de Vigilantes</title>
+  <meta name="Registro de Residentes" content="Formulario para registrar residentes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/minutadigital/Admin/AdminCrearVigilante/CSS/Admin_crear_vigilantes.css" />
+</head>
+<body>
+  <main>
+    <div>
+      <div>
+        <div class="contenedor">
+          <figure>
+            <a href="/minutadigital/Admin/Ver_Vigilante/PHP/ver_vigilantes.php">
+              <img class="img_home" src="/minutadigital/Residente/Residente_registro/IMG/imagenMinuta.jpg" alt="imagen home" />
+            </a>
+          </figure>
+          <div class="title_subtitle">
+            <h1 >MINUTA DE VIGILANCIA</h1>
+            <h2 >"Portal de la Hacienda 1"</h2>
+          </div>
+          <div class="vigilante">VIGILANTES</div>
+        </div>
+        <div class="form">
+          <div class="title">Crear Vigilante</div>
+          <form action="/minutadigital/Admin/AdminCrearVigilante/PHP/agregar_vigilante.php" method="POST">
+            <div class="input-container ic1">
+              <input name="cedula" type="text" class="input" required>
+              <div class="cut"></div>
+              <label class="iLabel">Cédula</label>
+            </div>
+            <div class="input-container ic2">
+              <input name="nombre" type="text" class="input" required>
+              <div class="cut"></div>
+              <label class="iLabel">Nombres</label>
+            </div>
+            <div class="input-container ic2">
+              <input name="apellido" type="text" class="input" required>
+              <div class="cut cut-short"></div>
+              <label class="iLabel">Apellidos</label>
+            </div>
+            <div class="input-container ic2">
+              <input name="email" type="email" class="input" required>
+              <div class="cut cut-short"></div>
+              <label class="iLabel">Email</label>
+            </div>
+            <div class="input-container ic2">
+              <input name="telefono" type="text" class="input" required>
+              <div class="cut cut-short"></div>
+              <label class="iLabel">Teléfono</label>
+            </div>
+            <div class="input-container ic2">
+              <input name="contrasena" type="password" class="input" required>
+              <div class="cut cut-short"></div>
+              <label class="iLabel">Contraseña</label>
+            </div>
+            <div class="input-container ic2">
+              <select name="turno" class="input" required>
+                <option value="" disabled selected hidden>Seleccionar Turno</option>
+                <option value="Diurno">Diurno</option>
+                <option value="Nocturno">Nocturno</option>
+                <label class="iLabel">Turno</label>
+
+              </select>
+            </div>
+            
+            <div class="input-container ic2">
+              <input name="nombre_empresa" type="text" class="input" required>
+              <div class="cut cut-short3"></div>
+              <label class="iLabel">Nombre de Empresa</label>
+            </div>
+            <button class="submit" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

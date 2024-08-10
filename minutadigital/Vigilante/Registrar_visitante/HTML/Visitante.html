@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Registro de Visitantes</title>
+  <meta name="Registro de Visitantes" content="Formulario para registrar visitantes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/minutadigital/Vigilante/Registrar_visitante/CSS/Visitante.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <figure>
+        <a href="/minutadigital/Vigilante/Vigilante_Home/HTML/Vigilante.html">
+          <img class="img_home" src="/minutadigital/Vigilante/Registrar_visitante/IMG/imagenMinuta.jpg" alt="imagen home" />
+        </a>
+      </figure>
+      <div class="titulo">
+        <h1 class="titulo_principal">MINUTA DE VIGILANCIA</h1>
+        <h2 class="subtitulo">"Portal de la Hacienda 1"</h2>
+      </div>
+      <div class="titulo">
+        <h1 class="titulo_principal">Visitantes</h1>
+      </div>
+    </header>
+    <div class="contenedor">
+      <form id="formularioRegistro" action="/minutadigital/Vigilante/Registrar_visitante/PHP/registrar_visitante.php" method="post">
+        <div class="fila-formulario">
+          <label for="fechaSalida">Fecha de Salida:</label>
+          <input type="date" id="fechaSalida" name="fechaSalida" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="horaSalida">Hora de Salida:</label>
+          <input type="time" id="horaSalida" name="horaSalida" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="numApto">Número de Apartamento:</label>
+          <input type="text" id="numApto" name="numApto" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="parqueo">Parqueo:</label>
+          <input type="text" id="parqueo" name="parqueo" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="nombres">Nombres:</label>
+          <input type="text" id="nombres" name="nombres" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="cedula">#Cédula:</label>
+          <input type="text" id="cedula" name="cedula"
+          required
+            pattern="[0-9]{10}"
+            title="La cédula debe contener exactamente 10 números" />
+        </div>
+
+        <div class="fila-formulario">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono" required />
+        </div>
+
+        <!-- Campo para la contraseña -->
+       
+
+        <div class="boton-formulario">
+          <button type="submit" class="btn primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

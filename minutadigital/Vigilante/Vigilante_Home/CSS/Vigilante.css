@@ -1,0 +1,156 @@
+body {
+  background-color: #4ce7ea;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna */
+  align-items: center;
+  padding: 2px;
+}
+
+.titulo {
+  text-align: center;
+  color: blue;
+}
+
+header img {
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
+}
+
+.contenedor {
+  max-width: 300px;
+  margin: auto;
+  background-color: white;
+  margin-top: 0px;
+  border-radius: 10%;
+}
+
+.titulo {
+  text-align: center;
+  color: #000000;
+}
+
+form {
+  display:inline-block;
+  grid-template-columns: repeat(1, 1fr); /* Cambiado a una columna en dispositivos móviles */
+  grid-gap: 20px;
+}
+
+.fila-formulario {
+  display: grid;
+  text-align: left;
+}
+
+label {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.boton-formulario {
+  text-align: center;
+}
+
+.primary {
+  background-color: #007bff;
+}
+
+.primary:hover {
+  background: #206f8f;
+}
+
+.secondary {
+  background-color: #28a745;
+}
+
+.secondary:hover {
+  background: #218838;
+}
+
+.button3 {
+  background-color: #12cccc;
+}
+
+
+.button3:hover {
+  background: #129e87;
+}
+
+.button4 {
+  background: #8d71b3;
+}
+
+.button4:hover {
+  background: #a356cf;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (min-width: 600px) {
+  form {
+    grid-template-columns: repeat(2, 1fr); /* Vuelve a dos columnas en pantallas más grandes */
+  }
+}
+
+.img_home {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 10px auto; /* Centro vertical y horizontalmente */
+}
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+  font-size: 15px;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -10px;
+  background: #c6e9e0;
+ }
+ 
+ button::after {
+  right: -10px;
+  background: #a1bbb3;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }

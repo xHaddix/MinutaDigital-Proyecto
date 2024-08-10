@@ -1,0 +1,151 @@
+body {
+  background-color: #5fc8d1; /* Color de fondo */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  justify-content: center;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+img{
+  border-radius: 10px;
+}
+
+.div_minuta {
+  text-align: center;
+}
+
+.listado_usuarios {
+  text-align: center;
+}
+
+.admin {
+  text-align: center;
+}
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #37aed3; /* Fondo del encabezado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+}
+
+.eventos {
+  margin-top: -1%;
+  color: #333333; /* Color del texto */
+}
+
+.titulo {
+  text-align: center;
+  color: #000000; /* Negro para mejorar la legibilidad */
+}
+
+header img {
+  margin: 0;
+  border-radius: 10%;
+  width: 300px; /* Tamaño ajustado para mejor presentación */
+  height: auto;
+  padding: 10px;
+}
+
+table {
+  margin: 20px auto; /* Centra la tabla horizontalmente y agrega espacio alrededor */
+  width: 95%; /* Ajuste de ancho para margen en pantallas pequeñas */
+  border-collapse: collapse;
+  background-color: #ffffff; /* Fondo blanco para las tablas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+  border-radius: 10px; /* Bordes redondeados para la tabla */
+  overflow: hidden; /* Para aplicar el borde redondeado a toda la tabla */
+}
+
+table th,
+table td {
+  border: 1px solid #cccccc;
+  padding: 10px; /* Aumenté el padding para mejorar la apariencia */
+  text-align: center;
+}
+
+th {
+  background-color: #5f4cea; /* Color de fondo de los encabezados de la tabla */
+  color: white; /* Color del texto para mayor contraste */
+}
+
+tr {
+  transition: background-color 0.3s; /* Animación suave al cambiar el fondo */
+}
+
+tr:hover {
+  background-color: #e5e9eb; /* Color de fondo al pasar el cursor */
+}
+
+.eventosBTN{
+  margin-left: 65px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  background-color: #887ce2;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 15px; /* Ajuste del padding para un botón más manejable */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Animación suave en el cambio de color y transformación */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para los botones */
+}
+
+button:hover {
+  background-color: #6a5bd1;
+  transform: translateY(-2px); /* Pequeña elevación al pasar el cursor */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Color para el botón deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor al estado no permitido */
+}
+
+select:focus {
+  border-color: #887ce2; /* Color del borde al enfocar */
+  outline: none; /* Eliminar el borde del navegador */
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%; /* Ajusta el ancho de la tabla al 100% en pantallas pequeñas */
+  }
+
+  table th,
+  table td {
+    font-size: 14px; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    padding: 8px; /* Ajuste del padding para pantallas pequeñas */
+  }
+
+  button {
+    width: calc(100% - 40px); /* Ajuste del ancho del botón para pantallas pequeñas */
+    margin: 10px 20px; /* Ajuste del margen para pantallas pequeñas */
+  }
+}
+

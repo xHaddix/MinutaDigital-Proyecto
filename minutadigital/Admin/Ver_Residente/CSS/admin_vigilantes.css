@@ -1,0 +1,76 @@
+/* admin_vigilantes.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #4ce7ea;
+  }
+  
+  .contenedor {
+    max-width: 600px;
+    margin: auto;
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+  }
+  
+  .img_admin_home {
+    width: 60%;
+    height: auto;
+    margin-top: 0px;
+  }
+  
+  .div_minuta,
+  .listado_usuarios,
+  .ver_usuarios,
+  .admin {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .botones-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center; /* Centrar el contenido de las celdas */
+    border: 1px solid #ddd; /* Línea divisorias */
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  td {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Estilo para los botones */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
